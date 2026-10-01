@@ -1,0 +1,6 @@
+<for="gymnasier"velg dit gymnasie>
+    <select name="gymnasier" id="gymnasier">
+        <option value="gymnasie1">Gymnasie 1</option>
+        <option value="gymnasie2">Gymnasie 2</option>
+        <option value="gymnasie3">Gymnasie 3</option>
+    </select>
