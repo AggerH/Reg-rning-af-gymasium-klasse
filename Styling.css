@@ -1,0 +1,11 @@
+  /* style theme is white blue and light blue. */
+    h1 {
+        color: #333;
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+
+    body {
+        background-color: #EAF3FF;
+    }
+  
