@@ -3,16 +3,191 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rengøring  </title>
+    <title>Rengøring</title>
+    <link rel="stylesheet" href="Styling.css">
 </head>
-<link rel="stylesheet" href="Styling.css">
 <body>
+    <div class="boarder">
+      <div class="screen">
+    <main>
+        <h1>Runner</h1>
+        <h2>Indtast information før rengørning:</h2>
 
-<h1>Rengøring</h1>
+        <div class="lokale">
+            <label for="lokaler">vælg lokalet du skal rengøre:</label>
+            <select name="lokaler" id="lokaler">
+            <option value="c1biblioteket">C1 Biblioteket</option>
+            <option value="c1110møde1">C1-110 Møde 1</option>
+            <option value="c1115rektorkontor">C1-115 Rektor kontor</option>
+            <option value="c1121pædagogiskkoordinatorkontor">C1-121 Pædagogisk koordinator kontor</option>
+            <option value="c1127stvkontor">C1-127 Stv. kontor</option>
+            <option value="c1128studievejledningen">C1-128 Studievejledningen</option>
+            <option value="c1129vicerektorkontor">C1-129 Vicerektor kontor</option>
+            <option value="c1146møde2">C1-146 Møde 2</option>
+            <option value="c1148euxkontor">C1-148 EUX kontor</option>
+            <option value="c2018tekøkken">C2-018 Te-køkken</option>
+            <option value="c2108lærerforberedelse">C2-108 Lærerforberedelse</option>
+            <option value="c3117lærerforberedelse">C3-117 Lærerforberedelse</option>
+            <option value="c3120lærerforberedelse">C3-120 Lærerforberedelse</option>
+            <option value="c3124pedelkontor">C3-124 Pedel kontor</option>
+            <option value="c3127leifskontor">C3-127 Leifs kontor</option>
+            <option value="c3142læseskrivevejledning">C3-142 Læse/skrive vejledning</option>
+            <option value="frokoststuen">Frokoststuen</option>
+            <option value="oasen">OASEN</option>
+            <option value="c1bøfkælder">C1 Bøfkælder</option>
+            <option value="c1salen">C1 Salen</option>
+            <option value="c1103lokaletvedlevnlab">C1-103 Lokalet ved levn-lab</option>
+            <option value="c1133denlaveendeafsalen">C1-133 Den lave ende af salen</option>
+            <option value="c1134levnedsmiddellab">C1-134 Levnedsmiddel lab</option>
+            <option value="c2001kemilab">C2-001 Kemi Lab</option>
+            <option value="c2003ellab">C2-003 El Lab</option>
+            <option value="c2015fablab">C2-015 Fab Lab</option>
+            <option value="c2016teori">C2-016 teori</option>
+            <option value="c2018ellab2">C2-018 El Lab 2</option>
+            <option value="c2101proceskemilab">C2-101 Proces/Kemi Lab</option>
+            <option value="c2103kemilager">C2-103 Kemi - (lager)</option>
+            <option value="c2104teori">C2-104 teori</option>
+            <option value="c2105teori36">C2-105 teori (3.6)</option>
+            <option value="c2109teori26">C2-109 teori (2.6)</option>
+            <option value="c2110teorilambda16">C2-110 teori (Lambda/1.6)</option>
+            <option value="c2111design">C2-111 Design</option>
+            <option value="c2201biolab">C2-201 Bio Lab</option>
+            <option value="c2205biolablight">C2-205 Bio Lab (light)</option>
+            <option value="c2206bioteori">C2-206 Bio teori</option>
+            <option value="c2207bioteori">C2-207 Bio teori</option>
+            <option value="c2209teori">C2-209 teori</option>
+            <option value="c2210teori">C2-210 teori</option>
+            <option value="c2211teori">C2-211 teori</option>
+            <option value="c2212teori">C2-212 teori</option>
+            <option value="c3001teori">C3-001 teori</option>
+            <option value="c3002fysikteori">C3-002 Fysik teori</option>
+            <option value="c3003fysiklab">C3-003 Fysik Lab</option>
+            <option value="c3004musiklokale">C3-004 Musiklokale</option>
+            <option value="c3006fysikteori">C3-006 Fysik teori</option>
+            <option value="c3007fysiklab">C3-007 Fysik Lab</option>
+            <option value="c3008fysikteori">C3-008 Fysik teori</option>
+            <option value="c3009fysiklab">C3-009 Fysik Lab</option>
+            <option value="c3101c3102medielab">C3-101 - C3-102 Medie Lab</option>
+            <option value="c3104c3103medielab">C3-104 - C3-103 Medie Lab</option>
+            <option value="c3111digitaltværkstedteori">C3-111 Digitalt værksted teori</option>
+            <option value="c3112teori">C3-112 teori</option>
+            <option value="c3113teori">C3-113 teori</option>
+            <option value="c3114teori">C3-114 teori</option>
+            <option value="c3115teori">C3-115 teori</option>
+            <option value="c3116teori">C3-116 teori</option>
+            <option value="c3118teori">C3-118 teori</option>
+            <option value="c3119teori">C3-119 teori</option>
+            <option value="darup">Darup</option>
+            <option value="hangar1byggetelt">Hangar 1 Byggetelt</option>
+            <option value="hangar2">Hangar 2</option>
+            <option value="htxkanikkebookes">HTX+ (kan ikke bookes)</option>
+            <option value="hønggymnasium">Høng Gymnasium</option>
+            <option value="hønglandbrugsskole">Høng Landbrugsskole</option>
+            <option value="idrætdarupidrætscenter">Idræt - Darup Idrætscenter</option>
+            <option value="idræthhxhal">Idræt HHX Hal</option>
+            <option value="j2142pulsen2almteorilokale">J2 - 142 - Pulsen 2 - alm. teorilokale</option>
+            <option value="j2125">J2 125</option>
+            <option value="j2156">J2 156</option>
+            <option value="m2217ellokale">M2 217 El lokale</option>
+            <option value="m3">M3</option>
+            <option value="manglerlokale1lokaleerendnuikkelagtpå">Manglerlokale1Lokale er endnu ikke lagt på</option>
+            <option value="manglerlokale2lokaleerendnuikkelagtpå">Manglerlokale2Lokale er endnu ikke lagt på</option>
+            <option value="målfeltet">Målfeltet</option>
+            <option value="rhroskildehallen">RHRoskildeHallen</option>
+            <option value="rhshal">RHS Hal</option>
+            <option value="virtuelt">VIRTUELT</option>
+            <option value="x1129teorilokalepulsen8">X1-129 teorilokale Pulsen 8</option>
+            <option value="x1132bygværksted">X1-132 Byg værksted</option>
+            <option value="x1207nyttræværksted">X1-207 NYT Træ-værksted</option>
+            <option value="x1213undervisningslokaletinyttræværksted">X1-213 Undervisningslokalet i NYT-træværksted</option>
+            <option value="x1214lokalevedcnfræser">X1-214 (lokale ved CN-fræser)</option>
+            <option value="x2307apulsen8">X2 307a - Pulsen 8</option>
+            <option value="x2405apulsen8">X2 405a - Pulsen 8</option>
+            </select>
+        </div>
+        <br>
+        
+        <div class="liste_skoler">
+            <label for="gymnasium">vælg din gymnasium du skal rengøre:</label>
+            <select name="gymnasium" id="gymnasium">
+            <option value="international-school-of-hellerup">International School of Hellerup</option>
+            <option value="nordsjaellands-grundskole-gymnasium">Nordsjællands Grundskole & Gymnasium</option>
+            <option value="european-school-copenhagen">European School Copenhagen</option>
+            <option value="rudolf-steiner-skolen-kvistgaard">Rudolf Steiner Skolen Kvistgård</option>
+            <option value="kolding-hf-vuc">Kolding HF & VUC</option>
+            <option value="herlufsholm-skole">Herlufsholm Skole</option>
+            <option value="aarhus-tech">Aarhus Tech</option>
+            <option value="bagsvaerd-kostskole-og-gymnasium">Bagsværd Kostskole og Gymnasium</option>
+            <option value="det-kristne-gymnasium">Det Kristne Gymnasium</option>
+            <option value="falkonergaardens-gymnasium-og-hf-kursus">Falkonergårdens Gymnasium og HF-kursus</option>
+            <option value="hf-vuc-vest">HF & VUC Vest</option>
+            <option value="hf-og-vuc-roskilde-koege">Hf og VUC Roskilde-Køge</option>
+            <option value="vordingborg-gymnasium-hf">Vordingborg Gymnasium & HF</option>
+            <option value="virum-gymnasium">Virum Gymnasium</option>
+            <option value="viby-gymnasium-og-hf">Viby Gymnasium og HF</option>
+            <option value="viborg-katedralskole">Viborg Katedralskole</option>
+            <option value="viborg-gymnasium-og-hf">Viborg Gymnasium og HF</option>
+            <option value="vestjysk-gymnasium-tarm">Vestjysk Gymnasium Tarm</option>
+            <option value="vesthimmerlands-gymnasium">Vesthimmerlands Gymnasium</option>
+            <option value="vestfyns-gymnasium">Vestfyns Gymnasium</option>
+            <option value="vejen-gymnasium-og-erhvervsskole">Vejen Gymnasium og Erhvervsskole</option>
+            <option value="varde-gymnasium-og-hf">Varde Gymnasium og HF</option>
+            <option value="u-nord">U/NORD</option>
+            <option value="toerring-gymnasium">Tørring Gymnasium</option>
+            <option value="toender-gymnasium-og-hf">Tønder Gymnasium og HF</option>
+            <option value="tornbjerg-gymnasium">Tornbjerg Gymnasium</option>
+            <option value="thy-mors-hf-vuc">Thy-Mors HF & VUC</option>
+            <option value="thisted-gymnasium-stx-og-hf">Thisted Gymnasium – stx og hf</option>
+            <option value="th-langs-hf-kursus-og-vuc">Th. Langs HF-kursus og VUC</option>
+            <option value="kti-kalaallit-nunaanni-teknimik-ilinniarfik">KTI, Kalaallit Nunaanni Teknikimik Ilinniarfik.</option>
+            <option value="taarnby-gymnasium">Tårnby Gymnasium</option>
+            <option value="svendborg-gymnasium">Svendborg Gymnasium</option>
+            <option value="struer-statsgymnasium">Struer Statsgymnasium</option>
+            <option value="stoevring-gymnasium">Støvring Gymnasium</option>
+            <option value="stenhus-gymnasium-og-hf">Stenhus Gymnasium og HF</option>
+            <option value="soenderborg-statsskole">Sønderborg Statsskole</option>
+            <option value="soroe-akademis-skole">Sorø Akademis Skole</option>
+            <option value="solroed-gymnasium">Solrød Gymnasium</option>
+            <option value="slagelse-gymnasium">Slagelse Gymnasium</option>
+            <option value="skive-gymnasium-og-hf">Skive Gymnasium og HF</option>
+            <option value="skanderborg-gymnasium">Skanderborg Gymnasium</option>
+            <option value="silkeborg-gymnasium">Silkeborg Gymnasium</option>
+            <option value="sct-knuds-gymnasium">Sct. Knuds Gymnasium</option>
+            <option value="sankt-annae-gymnasium">Sankt Annæ Gymnasium</option>
+            <option value="rysensteen-gymnasium">Rysensteen Gymnasium</option>
+            <option value="rybners-gymnasium">Rybners Gymnasium</option>
+            <option value="rungsted-gymnasium">Rungsted Gymnasium</option>
+            <option value="syddjurs-gymnasium">Syddjurs Gymnasium</option>
+            <option value="roedovre-gymnasium">Rødovre Gymnasium</option>
+            <option value="roedkilde-gymnasium">Rødkilde Gymnasium</option>
+            <option value="roskilde-katedralskole">Roskilde Katedralskole</option>
+            <option value="roskilde-gymnasium">Roskilde Gymnasium</option>
+            <option value="rosborg-gymnasium-og-hf">Rosborg Gymnasium og HF</option>
+            <option value="risskov-gymnasium">Risskov Gymnasium</option>
+            <option value="ringkjoebing-gymnasium">Ringkjøbing Gymnasium</option>
+            <option value="ribe-katedralskole">Ribe Katedralskole</option>
+            <option value="randers-statsskole">Randers Statsskole</option>
+            </select>
+        </div>
 <br>
-<br>
-<h1>Rengøring af gymasium klasse</h1>
-<p>Ren klasse rent hoved. behagelig klasselokale for elever og lærere. uden chikanenere lugtende affald.</p> 
-
+        <div class="bruger">
+         <label for="name">Navn</label>
+            <input type="text" id="name" name="name" placeholder="Indtast Dit Navn er">
+        </div>
+        <br>
+        <div class="bruger">
+            <label for="name">Skole id</label>
+            <input type="text" id="name" name="name" placeholder="Indtast Dit Skole Id Her">
+        </div>
+        <br>
+        <div class="bruger">
+            <label for="name">Dato</label>
+            <input type="text" id="name" name="name" placeholder="Skriv Uge Nr Her">
+        </div>
+        <br>
+        <a href="TagBilede.html"><button type="button">Næste</button></a>
+    </main>
+      </div>
+    </div>
 </body>
 </html>
