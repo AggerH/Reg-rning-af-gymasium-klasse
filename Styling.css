@@ -1,11 +1,130 @@
   /* style theme is white blue and light blue. */
-    h1 {
-        color: #333;
-        font-family: Arial, sans-serif;
-        text-align: center;
+   
+  
+
+    * {
+        box-sizing: border-box;
     }
 
     body {
         background-color: #EAF3FF;
+        margin: 0;
+        min-height: 100vh;
+        padding: 20px 12px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
     }
+
+
+ .lokale {
+    background-color: #1586b6;
+    padding: 16px;
+    border-radius: 18px;
+    margin: 12px 0;
+    overflow-wrap: anywhere;
+
+}
+    .liste_skoler {
+    background-color: #1586b6;
+    padding: 16px;
+    border-radius: 18px;
+    margin: 12px 0;
+    overflow-wrap: anywhere;
+    }
+    .beskrivelse {
+    font-family: impact,  sans-serif;
+    text-align: center;
+    color: #9f4343;
+
+    }
+    .opgaver 
+    {
+    font-family: 'Alex Brush', cursive;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color:#000000;
+    font-weight: bold;
+    font-size: 16px;
+    -webkit-text-stroke: 0.6px #000000;
+    }
+
+    .overskrift {
+    font-family: impact,  sans-serif;
+    text-align: center;
+    font-size: 12px; 
+    }
+    h1 {
+    font-family: 'regarding',  sans-serif;
+    text-align: center;
+    font-weight: bolder;
+    
+   font-size: 40px;
+   color: #4169E1;
+
+    }
+    .billeder {
+        text-align: center;
+
+        
+     
+    }
+    .billeder button {
+    background-color: #1c3ad1;
+    color: white;
+    border-radius: 14px;
+    width: 40%;
+    height: 50px;
+    font-size: 15px;
+    cursor: pointer;
+   
+    }
+
+    .billeder button:hover {
+    transform: translateY(-2px);
   
+}
+.billeder button:active {
+
+  transform: translateY(2px);
+}
+
+
+
+
+ .boarder {
+    width: min(390px, 100%);
+    min-height: 750px;
+    height: auto;
+    padding: 18px;
+
+    border: 10px solid #1f1f1f;
+    border-radius: 45px;
+
+    background: #E6F2FF;
+    box-sizing: border-box;
+    text-align: center;
+    overflow: visible;
+}
+
+.screen,
+main {
+    width: 100%;
+}
+
+select,
+input {
+    max-width: 100%;
+}
+.information {
+    text-align: center;
+    text-decoration: underline;
+    
+}
+
+.eula a {
+    color: #1b263c;
+    text-decoration: underline;
+}
+
+ 
